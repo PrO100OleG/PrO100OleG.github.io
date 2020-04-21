@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <body onload='animateText("text","Новий та сучасний метод - Віртуальна реальність",0);' oncklic='return location.href="main.html"'>
+    <script type="text/javascript">
+      function animateText(id, text, i) {
+        document.getElementById(id).innerHTML = text.substring(0, i);
+        i++;
+        if(i > text.length) i = 0;
+        setTimeout("animateText('" + id + "','" + text + "'," + i + ")", 100);    }
+      </script>
+      <script src="js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+      <meta name="viewport" content="1.0">
+      <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+      <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+      <title>VR бібліотека</title>
+    </head>
+    <body>
+      <div class="container_vr">
+        <div id="navigation" class="navigation">
+          <img src="img/logo.png" alt="" class="logo">
+          <a href="#main">Головна</a>
+          <div class="menu_ben">|</div><a href="#about">Про проект</a>
+          <div class="menu_ben">|</div><a href="#benefits">Переваги</a>
+          <div class="menu_ben">|</div><a href="#program">Програми</a>
+          <div class="menu_ben">|</div><a href="#gallery">Галерея</a>
+          <div class="menu_ben">|</div><a href="#partners">Партнери</a>
+          <div class="menu_ben">|</div><a href="#contacts">Контакти</a>
+          <nav id="menu" class="menu">
+           <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open">
+           <label onclick="menuFun()" class="menu-open-button" for="menu-open">
+            <span class="lines line-1"></span>
+            <span class="lines line-2"></span>
+            <span class="lines line-3"></span>
+          </label>
+
+          <a href="#main" class="menu-item blue"> <i id="aphone"  class="fa fa-anchor">Головна</i> </a>
+          <a href="#about" class="menu-item green"> <i id="aphone1"  class="fa fa-coffee">проект</i> </a>
+          <a href="#benefits" class="menu-item red"> <i id="aphone2"  class="fa fa-heart">Переваги</i> </a>
+          <a href="#gallery" class="menu-item purple"> <i id="aphone3"  class="fa fa-microphone">Галерея</i> </a>
+          <a href="#partners" class="menu-item orange"> <i id="aphone4"  class="fa fa-star">Партнери</i> </a>
+          <a href="#contact" class="menu-item lightblue"> <i id="aphone5"  class="fa fa-diamond">Контакти</i> </a>
+
+        </nav>
+      </div>
+      <div id="main" class="header">
+        <div class="article_header">
+          <h2 id="text">Новий та сучасний метод - Віртуальна реальність</h2>
+          <iframe width="75%" height="450vh" src="https://www.youtube.com/embed/eAKGQq_jtlY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="article_header2">
+          <h2>VR у бібліотеці</h2>
+          <div class="cont_form">
+            <h1>Реєстрація</h1>
+            <input placeholder="Введіть ваше ім'я" class="in_text" type="text">
+
+            <input placeholder="Введіть ваш EMAIL" class="in_text" type="text">
+
+            <input placeholder="Введіть ваше повідомлення" class="in_text" type="text">
+            <div class="checkboxes">
+              <input type="checkbox">
+              <p>Я погоджуюсь з умовами</p>
+            </div>
+
+            <input class="one_button" value="Відправити" onclick="done()" type="button">
+
+          </div>
+
+        </div>
+      </div></div>
+      <div id="about" class="container_about phone_col">
+        <div  class="about">
+          <h2>Про проект</h2>
+          <p data-wow-duration="2s" class="wow fadeIn">Майбутнє освіти пов'язане як з онлайн-платформами, так і з віртуальною реальністю — це наступний крок у розвитку освітнього контенту. Ми пропонуємо читання книг що оживають, подорож у віртуальні тури країнами світу, вивчення англійської мови пірнаючи у підводний світ з допомогою гаджетів віртуальної реальності. Все це відбувається одночасно з інформаційною подачею наших бібліотекарів, які цікаво та пізнавально доповнюють технологічні інновації живим спілкуванням та практичними навичками. Така подача матеріалу безсумнівно привертає увагу, викликає емоційну реакцію, та виховує у дітей цікавість до бібліотеки та читання.</p>
+          <div class="article_about">
+            <div class="thing">
+              <img class="thing_img wow fadeInUp" src="img/about1.png">
+              <h3 class="white">Читання книг, що оживають</h3>
+            </div>
+            <div class="thing">
+              <img class="thing_img wow fadeInUp" data-wow-delay="0.5s" src="img/about3.png">
+              <h3>Подорожі у віртуальні тури</h3>
+            </div>
+            <div class="thing">
+              <img class="thing_img wow fadeInUp" data-wow-delay="1s" src="img/about2.png">
+              <h3 class="white">Вивчення англійської мови</h3>
+            </div>
+          </div>
+          <div class="footer_about">
+            <button class="reg">Запишіться</button>
+            <h3>на найближчий захід у бібліотеці</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="benefits" class="container_benefits">
+        <h2>Переваги</h2>
+        <div>
+          <div class="ben wow fadeInLeft">
+            <img src="img/ben4.png">
+            <h3>Безкоштовно</h3>
+            <p>всі заходи проводяться на безоплатній основі</p>
+          </div>
+          <div class="ben wow fadeInUp">
+            <img src="img/ben3.png">
+            <h3>Вільний Wi-Fi</h3>
+            <p>кожен користувач бібліотеки може користуватись доступом до мережі Інтернет з допомогою Wi-Fi</p>
+          </div>
+          <div class="ben wow fadeInUp">
+            <img src="img/ben2.png">
+            <h3>Дитяча кімната</h3>
+            <p>інтерактивні ігри, м’які іграшки, яскраві меблі та багато-багато книг</p>
+          </div>
+          <div class="ben wow fadeInRight">
+            <img src="img/ben1.png">
+            <h3>Центральна частина міста</h3>
+            <p>зручне розташування бібліотеки</p>
+          </div></div>
+        </div>
+        <div id="program" class="container_programs">
+          <h2>Програми</h2>
+
+          <section class="slider wow zoomIn">
+            <article class="slider__element1">one</article>
+            <article class="slider__element2">two</article>
+            <article class="slider__element3">three</article>
+            <article class="slider__element4">four</article>
+
+          </section>
+
+        </div>
+        <div id="gallery" class="container_gallery">
+          <h2>Галерея</h2>
+          <ul id="slides" class="wow jackInTheBox">
+            <li class="slide showing"><img class="img_slide" src="img/gal1.JPG"></li>
+            <li class="slide showing"><img class="img_slide" src="img/gal2.JPG"></li>
+            <li class="slide showing"><img class="img_slide" src="img/gal3.JPG"></li>
+            <li class="slide showing"><img class="img_slide" src="img/gal4.JPG"></li>
+            <li class="slide showing"><img class="img_slide" src="img/gal12.png"></li>
+            <li class="slide showing"><img class="img_slide" src="img/gal6.JPG"></li>
+            <li class="slide showing"><img class="img_slide" src="img/gal7.JPG"></li>
+            <li class="slide showing"><img class="img_slide" src="img/gal8.JPG"></li>
+            <li class="slide showing"><img class="img_slide" src="img/gal9.JPG"></li>
+            <li class="slide showing"><img class="img_slide" src="img/gal10.png"></li>
+            <li class="slide showing"><img class="img_slide" src="img/gal11.png"></li>
+            <li class="slide showing"><img class="img_slide" src="img/gal5.jpg"></li>
+          </ul>
+
+          <button class="controls" id="pause1">Переглянути</button>
+        </div>
+        <div id="partners" class="container_partners">
+          <h2 style="color: white;">Партнери</h2>
+          <div>
+            <img class="i1 wow rotateOut" src="img/part1.png" alt="" width="200" height="200">
+            <img class="i2 wow rotateOut" src="img/part2.png" alt="" width="284" height="177">
+            <img class="i3 wow rotateOut" src="img/part3.png" alt="" width="184" height="179">
+          </div>
+        </div>
+        <div id="contacts" class="contacts wow tada">
+          <div>
+            <i class="fas fa-laptop"></i>
+            <span>
+              Cайт: 
+              <a href="http://mcbs.if.ua/">http://mcbs.if.ua/</a>
+            </span>
+          </div>
+          <div>
+            <i class="fas fa-mobile-alt"></i>
+            <span>Tелефон: +380342532597</span>
+          </div>
+          <div>
+            <i class="fas fa-street-view"></i>
+            <span>Aдреса: вул. С.Бандери, 8</span>
+          </div>
+          <div>
+            <i class="far fa-envelope"></i>
+            <span>biblio.if.cdb@gmail.com</span>
+          </div>
+          <script src="js/script.js">
+          </script>
+
+        </body>
+        </html>
